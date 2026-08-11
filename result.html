@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verified Result</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-header">
+    <div class="brand">The Institute Of Cost Accountants Of India</div>
+  </div>
+
+  <main class="result-body">
+    <div class="back-link"><a href="verification.html">Back</a></div>
+    <h2>Verification Result : June-2023</h2>
+
+    <section class="info-box">
+      <h3>Verification Status For June-2023 Term Of Examination</h3>
+      <table class="info-table">
+        <tr><th>Reg No</th><td id="regValue">123456</td></tr>
+        <tr><th>Enrol No</th><td>098765</td></tr>
+        <tr><th>Name</th><td>SHAKTI KUMAR</td></tr>
+        <tr><th>Father's Name</th><td>MANOJ KUMAR</td></tr>
+        <tr><th>Exam</th><td>June-2023</td></tr>
+        <tr><th>Date of Birth</th><td>15/11/1998</td></tr>
+        <tr><th>Status</th><td>GOLD PASS</td></tr>
+      </table>
+    </section>
+
+    <section class="info-box">
+      <h3>Revised Result After Verification</h3>
+      <table class="result-table">
+        <thead>
+          <tr>
+            <th>Subject</th>
+            <th>Max</th>
+            <th>Marks</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Sub. 1</td><td>100</td><td>26</td><td>26</td></tr>
+          <tr><td>Sub. 2</td><td>100</td><td>63</td><td>63</td></tr>
+          <tr><td>Sub. 3</td><td>100</td><td>58</td><td>58</td></tr>
+          <tr class="summary-row"><td>Total</td><td>300</td><td>147</td><td>147</td></tr>
+        </tbody>
+      </table>
+      <div class="result-status">Result: GOLD PASS</div>
+    </section>
+
+    <div class="page-note">ICMAI CMA Reverification Results</div>
+  </main>
+
+  <script>
+    function updateRegValue() {
+      const params = new URLSearchParams(window.location.search);
+      const regNumber = params.get('reg');
+      if (regNumber) {
+        document.getElementById('regValue').textContent = regNumber;
+      }
+    }
+    updateRegValue();
+  </script>
+</body>
+</html>
