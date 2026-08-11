@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ICMAI Result Portal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f6f6f6;
+      color: #333;
+    }
+    .site-header {
+      background: #4c8a8f;
+      color: #fff;
+      padding: 18px 20px;
+      text-align: center;
+      border-bottom: 2px solid #3d6e71;
+    }
+    .brand {
+      font-size: 1.15rem;
+      font-weight: 700;
+    }
+    .page-body,
+    .form-body,
+    .result-body {
+      max-width: 920px;
+      margin: 20px auto;
+      padding: 0 16px 40px;
+    }
+    h1,
+    h2,
+    h3 {
+      color: #a80000;
+      margin-bottom: 14px;
+    }
+    h1 {
+      font-size: 1.8rem;
+    }
+    .result-section,
+    .info-box {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 18px 22px;
+      margin-bottom: 20px;
+    }
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    li {
+      margin: 8px 0;
+      line-height: 1.5;
+    }
+    a,
+    button {
+      color: #0b4f8b;
+      text-decoration: none;
+    }
+    a:hover,
+    button:hover {
+      text-decoration: underline;
+    }
+    button {
+      background: #2f5f67;
+      color: #fff;
+      border: none;
+      padding: 11px 18px;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .back-link {
+      margin-bottom: 18px;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+    input[type="text"] {
+      width: 100%;
+      max-width: 360px;
+      padding: 10px 12px;
+      border: 1px solid #7b9b9f;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      font-size: 1rem;
+    }
+    .info-table,
+    .result-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .info-table th,
+    .info-table td,
+    .result-table th,
+    .result-table td {
+      border: 1px solid #ccc;
+      padding: 10px 12px;
+    }
+    .info-table th {
+      width: 180px;
+      text-align: left;
+      background: #f3f3f3;
+    }
+    .result-table th {
+      background: #e7f1f2;
+      text-align: left;
+    }
+    .summary-row td {
+      font-weight: 700;
+      background: #f7f7f7;
+    }
+    .page-note {
+      text-align: center;
+      margin-top: 24px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+    .hidden {
+      display: none;
+    }
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .nav-links a {
+      padding: 10px 14px;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      color: #0b4f8b;
+    }
+    .nav-links a.active {
+      background: #e7f1f2;
+      border-color: #0b4f8b;
+    }
+    @media (max-width: 720px) {
+      .site-header,
+      .page-body,
+      .form-body,
+      .result-body {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      .info-table th,
+      .info-table td,
+      .result-table th,
+      .result-table td {
+        padding: 8px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="site-header">
+    <div class="brand">The Institute Of Cost Accountants Of India</div>
+  </div>
+
+  <main class="page-body">
+    <div class="nav-links">
+      <a href="#home" id="link-home">Home</a>
+      <a href="#verify" id="link-verify">Verification</a>
+      <a href="#result" id="link-result">Result</a>
+    </div>
+
+    <section id="home" class="result-section">
+      <h1>Press Release Intermediate & Final Result June-2023 Term</h1>
+      <h2>Intermediate Result</h2>
+      <ul>
+        <li>Pass List Complete Pass (Syllabus 2016)</li>
+        <li>Pass List Group I (Syllabus 2016)</li>
+        <li>Pass List Group II (Syllabus 2016)</li>
+        <li>Provisional Rank List</li>
+        <li><a href="#verify">View reverification</a></li>
+        <li><a href="#verify">Check your result online</a></li>
+      </ul>
+      <h2>Final Result</h2>
+      <ul>
+        <li>Pass List Complete Pass (Syllabus 2016)</li>
+        <li>Pass List Group I (Syllabus 2016)</li>
+        <li>Pass List Group II (Syllabus 2016)</li>
+        <li>Provisional Rank List</li>
+        <li><a href="#verify">View reverification</a></li>
+        <li><a href="#verify">Check your result online</a></li>
+      </ul>
+    </section>
+
+    <section id="verify" class="form-body hidden">
+      <div class="back-link"><a href="#home">Back</a></div>
+      <h2>Verification Result : June-2023</h2>
+      <form id="verificationForm">
+        <label for="regNumber">Registration Number</label>
+        <input id="regNumber" name="regNumber" type="text" placeholder="Enter registration number" required />
+        <button type="submit">Show Verified Result</button>
+      </form>
+      <div class="page-note">ICMAI CMA Reverification Results</div>
+    </section>
+
+    <section id="result" class="result-body hidden">
+      <div class="back-link"><a href="#verify">Back</a></div>
+      <h2>Verification Result : June-2023</h2>
+      <section class="info-box">
+        <h3>Verification Status For June-2023 Term Of Examination</h3>
+        <table class="info-table">
+          <tr><th>Reg No</th><td id="regValue">123456</td></tr>
+          <tr><th>Enrol No</th><td>098765</td></tr>
+          <tr><th>Name</th><td>SHAKTI KUMAR</td></tr>
+          <tr><th>Father's Name</th><td>MANOJ KUMAR</td></tr>
+          <tr><th>Exam</th><td>June-2023</td></tr>
+          <tr><th>Date of Birth</th><td>15/11/1998</td></tr>
+          <tr><th>Status</th><td>GOLD PASS</td></tr>
+        </table>
+      </section>
+      <section class="info-box">
+        <h3>Revised Result After Verification</h3>
+        <table class="result-table">
+          <thead>
+            <tr>
+              <th>Subject</th>
+              <th>Max</th>
+              <th>Marks</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Sub. 1</td><td>100</td><td>26</td><td>26</td></tr>
+            <tr><td>Sub. 2</td><td>100</td><td>63</td><td>63</td></tr>
+            <tr><td>Sub. 3</td><td>100</td><td>58</td><td>58</td></tr>
+            <tr class="summary-row"><td>Total</td><td>300</td><td>147</td><td>147</td></tr>
+          </tbody>
+        </table>
+        <div class="result-status">Result: GOLD PASS</div>
+      </section>
+      <div class="page-note">ICMAI CMA Reverification Results</div>
+    </section>
+  </main>
+
+  <script>
+    const sections = {
+      home: document.getElementById('home'),
+      verify: document.getElementById('verify'),
+      result: document.getElementById('result'),
+    };
+    const links = {
+      home: document.getElementById('link-home'),
+      verify: document.getElementById('link-verify'),
+      result: document.getElementById('link-result'),
+    };
+
+    function showSection(name) {
+      Object.keys(sections).forEach(key => {
+        sections[key].classList.toggle('hidden', key !== name);
+        links[key].classList.toggle('active', key === name);
+      });
+      if (name === 'result') {
+        const regNumber = localStorage.getItem('lastReg') || '123456';
+        document.getElementById('regValue').textContent = regNumber;
+      }
+    }
+
+    function handleHash() {
+      const hash = window.location.hash.slice(1);
+      if (hash === 'verify' || hash === 'result' || hash === 'home') {
+        showSection(hash);
+      } else {
+        showSection('home');
+      }
+    }
+
+    document.getElementById('verificationForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const regNumber = document.getElementById('regNumber').value.trim();
+      if (!regNumber) {
+        return;
+      }
+      localStorage.setItem('lastReg', regNumber);
+      showSection('result');
+      window.location.hash = 'result';
+    });
+
+    window.addEventListener('hashchange', handleHash);
+    handleHash();
+  </script>
+</body>
+</html>
