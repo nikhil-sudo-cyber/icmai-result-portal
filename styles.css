@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f6f6f6;
+  color: #333;
+}
+
+.site-header {
+  background: #4c8a8f;
+  color: #fff;
+  padding: 18px 20px;
+  text-align: center;
+  border-bottom: 2px solid #3d6e71;
+}
+
+.brand {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.page-body,
+.form-body,
+.result-body {
+  max-width: 920px;
+  margin: 20px auto;
+  padding: 0 16px 40px;
+}
+
+h1,
+h2,
+h3 {
+  color: #a80000;
+  margin-bottom: 14px;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+.result-section,
+.info-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 18px 22px;
+  margin-bottom: 20px;
+}
+
+ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+li {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+a {
+  color: #0b4f8b;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+input[type="text"] {
+  width: 100%;
+  max-width: 360px;
+  padding: 10px 12px;
+  border: 1px solid #7b9b9f;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  font-size: 1rem;
+}
+
+button {
+  background: #2f5f67;
+  color: #fff;
+  border: none;
+  padding: 11px 18px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #264c54;
+}
+
+.back-link {
+  margin-bottom: 18px;
+}
+
+.info-table,
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.info-table th,
+.info-table td,
+.result-table th,
+.result-table td {
+  border: 1px solid #ccc;
+  padding: 10px 12px;
+}
+
+.info-table th {
+  width: 180px;
+  text-align: left;
+  background: #f3f3f3;
+}
+
+.result-table th {
+  background: #e7f1f2;
+  text-align: left;
+}
+
+.summary-row td {
+  font-weight: 700;
+  background: #f7f7f7;
+}
+
+.page-note {
+  text-align: center;
+  margin-top: 24px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 720px) {
+  .site-header,
+  .page-body,
+  .form-body,
+  .result-body {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .info-table th,
+  .info-table td,
+  .result-table th,
+  .result-table td {
+    padding: 8px 10px;
+  }
+}
